@@ -1,4 +1,6 @@
-<a name="index">**Index**</a>
+**原文地址：**[C++ 并发编程](https://paul.pub/cpp-concurrency/)
+
+<a name="index">**目录**</a>
 <a href="#0">C++多线程</a>  
 &emsp;<a href="#1">线程</a>  
 &emsp;&emsp;<a href="#2">线程的创建</a>  
@@ -23,7 +25,7 @@
 &emsp;<a href="#21">并行算法</a>  
 <a href="#22">结束语</a>  
 <a href="#23">参考资料与推荐读物</a>  
-&emsp;<a href="#24">原文地址</a>  
+<a href="#24">原文地址</a>  
 # <a name="0">C++多线程</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 ## <a name="1">线程</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
@@ -517,7 +519,7 @@ C++内存模型是C++11标准中最重要的特性之一。它是多线程环境
 - [C++17 STL Parallel Algorithms - with GCC 9.1 and Intel TBB on Linux and macOS](https://solarianprogrammer.com/2019/05/09/cpp-17-stl-parallel-algorithms-gcc-intel-tbb-linux-macos/)
 - [How to install packages from a newer distribution without installing unwanted](https://medium.com/@george.shuklin/how-to-install-packages-from-a-newer-distribution-without-installing-unwanted-6584fa93208f)
 
-## <a name="24">原文地址</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
+# <a name="24">原文地址</a><a style="float:right;text-decoration:none;" href="#index">[Top]</a>
 
 [《C++ 并发编程（从C++11到C++17）》](https://paul.pub/cpp-concurrency/) by [保罗的酒吧](https://paul.pub/)
 
