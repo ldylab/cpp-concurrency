@@ -10,12 +10,16 @@ using namespace std;
 static const int MAX = 10e8;
 static double sum = 0;
 
+// 创建一个锁
 static mutex exclusive;
 
+// 线程worker
 void concurrent_worker(int min, int max) {
   for (int i = min; i <= max; i++) {
+    // 在访问共享的数据（sum）前加锁
     exclusive.lock();
     sum += sqrt(i);
+    // 在访问之后解锁
     exclusive.unlock();
   }
 }
@@ -30,6 +34,7 @@ void concurrent_task(int min, int max) {
   sum = 0;
   for (int t = 0; t < concurrent_count; t++) {
     int range = max / concurrent_count * (t + 1);
+    // 在多线程中使用带锁的版本
     threads.push_back(thread(concurrent_worker, min, range));
     min = range + 1;
   }

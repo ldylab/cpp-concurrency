@@ -17,6 +17,8 @@ void concurrent_worker(int min, int max) {
   for (int i = min; i <= max; i++) {
     tmp_sum += sqrt(i);
   }
+  // 通过一个局部变量保存当前线程的处理结果
+  // 在汇总总结的时候进行锁保护
   exclusive.lock();
   sum += tmp_sum;
   exclusive.unlock();
